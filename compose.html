@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MarvelMail</title>
+
+	<!-- Link to the CSS reset file, Normalize.css 
+		 Author: Nicolas Gallagher
+		 URL: https://necolas.github.io/normalize.css/
+		 Date accessed: 10 Nov 2021
+	-->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Link to the main stylesheet for this template -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header id="homepg-banner" class="pg-banner">
+		<h1><a href="index.html">MarvelMail</a></h1>
+	</header>
+	<nav class="primary-nav">
+		<a href="inbox.html">Inbox</a>
+		<a href="sent-drafts.html">Sent &amp; drafts</a>
+		<a href="compose.html">Write new email</a>
+		<a href="index.html">Login</a>
+	</nav>
+
+	<main id="homepg-main-content" class="pg-main-content">
+		<section class="mail-table-box">
+			<h3>Compose a new email</h3>
+		
+			<form class="flex-email-form" action="#" method="post">
+				<div class="flex-form-row">
+					<label for="to-name">Recipient full name: </label>
+					<input type="text" name="e-recipient-fullname" id="to-name" required>
+				</div>
+				<div class="flex-form-row">
+					<label for="to-email">Recipient email: </label>
+					<input type="email" name="e-recipient-email" id="to-email" required>
+				</div>
+				<div class="flex-form-row">
+					<label for="email-subject">Email subject: </label>
+					<input type="text" name="e-subject" id="email-subject" required>
+				</div>
+				<div class="flex-form-row">
+					<label for="email-text">Email text content: </label>
+					<textarea name="e-text" id="email-text" cols="30" rows="10" required></textarea>
+				</div>
+				<div class="flex-form-row">
+					<button class="submit-btn" type="button" name="e-submit" id="email-submit-btn">Send email</button>
+					<input class="reset-btn" type="reset" name="e-clear" value="Clear contents">
+				</div>
+			</form>
+		
+		</section>
+		
+	</main>
+
+	
+	<footer id="homepg-footer" class="pg-footer">
+		<p>&copy; 2021, MarvelMail: The official email system for Super Heroes.</p>
+	</footer>
+	
+	<!-- Link to the main JavaScript file for the template -->
+	<script src="js/scripts.js"></script>
+	
+	</body>
+</html>

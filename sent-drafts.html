@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MarvelMail</title>
+
+	<!-- Link to the CSS reset file, Normalize.css 
+		 Author: Nicolas Gallagher
+		 URL: https://necolas.github.io/normalize.css/
+		 Date accessed: 10 Nov 2021
+	-->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Link to the main stylesheet for this template -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header id="homepg-banner" class="pg-banner">
+		<h1><a href="index.html">MarvelMail</a></h1>
+	</header>
+	<nav class="primary-nav">
+		<a href="inbox.html">Inbox</a>
+		<a href="sent-drafts.html">Sent &amp; drafts</a>
+		<a href="compose.html">Write new email</a>
+		<a href="index.html">Login</a>
+	</nav>
+
+	<main id="homepg-main-content" class="pg-main-content">
+		<section class="mail-table-box">
+			<h3>Sent emails</h3>
+		
+			<!-- Sent email divisions -->
+			<div id="sent" class="email-table">
+				<div class='email-heading-row'>
+					<div class='email-from'>Sent to</div>
+					<div class='email-subject-heading'>Email subject</div>
+					<div class='email-date'>Date Sent</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="mail-table-box">
+			<h3>Draft/saved emails</h3>
+		
+			<!-- Draft email divisions -->
+			<div id="draft" class="email-table">
+				<div class='email-heading-row'>
+					<div class='email-from'>Sent to</div>
+					<div class='email-subject-heading'>Email subject</div>
+					<div class='email-date'>Date Saved</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+
+	
+	<footer id="homepg-footer" class="pg-footer">
+		<p>&copy; 2021, MarvelMail: The official email system for Super Heroes.</p>
+	</footer>
+	
+	<!-- Link to the JSON data JavaScript file for the template -->
+	<script src="js/jsondata.js"></script>
+
+	<!-- Link to the main JavaScript file for the template -->
+	<script src="js/scripts.js"></script>
+	
+	</body>
+</html>
